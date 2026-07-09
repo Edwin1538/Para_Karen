@@ -33,7 +33,7 @@ const boton =
 const nombres = {
 
     mundo: "🎢 Mundo Aventura",
-    cafeteria: "☕ Cafetería + Sorpresa",
+    cafeteria: "☕ Cafetería especial en el centro + Caminata",
     bolos: "🎳 Bolos",
     jardin: "🌿 Biblioteca Virgilio Barco",
     cafe: "☕ Café Cercano"
