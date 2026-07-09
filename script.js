@@ -70,7 +70,7 @@ const resultados = {
     },
 
     cafeteria: {
-        titulo: "☕ ¡Has seleccionado la Cafetería + Sorpresa!",
+        titulo: "☕ ¡Has seleccionado la Cafetería en el centro + Sorpresa!",
         texto:
             "Después del café podremos caminar, conversar y descubrir lugares del centro, hay mucho por ver!"
     },
