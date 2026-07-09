@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>Elige nuestra primera aventura ✨</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet"
+      href="styles.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- PANTALLA 1 -->
+
+<section
+    id="pantalla1"
+    class="pantalla activa">
+
+    <div class="nube nube1"></div>
+    <div class="nube nube2"></div>
+    <div class="nube nube3"></div>
+    <div class="nube nube4"></div>
+
+    <div class="contenedor">
+
+        <h1>
+            Hola Karen!
+        </h1>
+
+        <p class="intro">
+
+            He estado pensando en nuestra primera salida
+            y se me ocurrieron varias ideas, pero como elegir por WhatsApp era demasiado normal,
+            decidí hacer algo un poco distinto.
+
+            <br><br>
+
+            Ayudame a escoger nuestra salida porfavor! ✨
+            <br><br>
+
+
+        </p>
+
+        <button onclick="mostrarPantalla(2)">
+
+            ¡Adelante!
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PANTALLA 2 -->
+
+<section
+    id="pantalla2"
+    class="pantalla">
+
+    <div class="contenedor">
+
+        <h2>
+            Opciones disponibles
+        </h2>
+
+        <p class="subtexto">
+
+            He pensado en 5 opciones.
+
+            <br>
+
+            Tres son cercanas y dos un poco más lejos.
+
+            <br><br>
+
+            Si te gustan varias no te preocupes...
+
+            <br>
+
+            Después podremos visitar las demás ☕✨
+
+        </p>
+
+        <div class="grid-opciones">
+
+
+            <!-- Cafetería Centro -->
+
+            <div class="card">
+
+                <img
+                    src="cafeteria-centro.jpg"
+                    alt="Cafetería Centro">
+
+                <h3>☕ Cafetería + sorpresa</h3>
+
+                <button
+                    onclick="seleccionarOpcion('cafeteria')">
+
+                    Elijo esta
+                </button>
+
+            </div>
+
+            <!-- Jardín -->
+
+            <div class="card">
+
+                <img
+                    src="jardin-botanico.jpg"
+                    alt="Jardín Botánico">
+
+                <h3>🌿 Biblioteca Virgilio Barco</h3>
+
+                <button
+                    onclick="seleccionarOpcion('jardin')">
+
+                    Elijo esta
+                </button>
+
+            </div>
+
+            
+            <!-- Mundo Aventura -->
+
+            <div class="card">
+
+                <img
+                    src="mundo-aventura.jpg"
+                    alt="Mundo Aventura">
+
+                <h3>🎢 Mundo Aventura</h3>
+
+                <button
+                    onclick="seleccionarOpcion('mundo')">
+
+                    Elijo esta
+                </button>
+
+            </div>
+
+                        <!-- Bolos -->
+
+            <div class="card">
+
+                <img
+                    src="bolos.jpg"
+                    alt="Bolos">
+
+                <h3>🎳 Bolos</h3>
+
+                <button
+                    onclick="seleccionarOpcion('bolos')">
+
+                    Elijo esta
+                </button>
+
+            </div>
+
+
+
+            <!-- Café -->
+
+            <div class="card">
+
+                <img
+                    src="cafe-cercano.jpg"
+                    alt="Café Cercano">
+
+                <h3>☕ Café cercano</h3>
+
+                <button
+                    onclick="seleccionarOpcion('cafe')">
+
+                    Elijo esta
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="confirmacion">
+
+            <p id="mensajeSeleccion"></p>
+
+            <button
+                id="btnFinal"
+                onclick="mostrarResultado()">
+
+                Paso final ✨
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PANTALLA 3 -->
+
+<section
+    id="pantalla3"
+    class="pantalla">
+
+    <div class="contenedor">
+
+        <h2 id="tituloResultado">
+
+        </h2>
+
+        <p
+            id="textoResultado"
+            class="resultado">
+
+        </p>
+
+        <div class="captura">
+
+            <h3>
+                📸 Tienes una misión importante ahora
+            </h3>
+
+            <p>
+
+                Esta página todavía está
+                en fase de pruebas y tiene un pequeño problema:
+
+                <br>
+
+                Todavía no sabe enviarme mensajes
+                por WhatsApp 😅
+
+                <br><br>
+
+                Así que envíame una captura
+                de pantalla para saber
+                cuál fue tu elección.
+
+            </p>
+
+        </div>
+
+        <button
+            onclick="reiniciar()">
+
+            🔄 Volver al inicio
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- CONFETI -->
+
+<canvas id="confettiCanvas"></canvas>
+
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>
